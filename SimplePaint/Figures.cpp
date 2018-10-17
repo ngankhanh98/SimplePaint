@@ -24,6 +24,8 @@ cRectangle::~cRectangle()
 
 void cRectangle::onDraw(PAINTSTRUCT ps, HDC hdc)
 {
+	if (this->upper_leftPoint.getX() == -1)
+		return;
 	Rectangle(hdc, upper_leftPoint.getX(), upper_leftPoint.getY(), lower_rightPoint.getX(), lower_rightPoint.getY());
 }
 
@@ -42,11 +44,15 @@ cEllipse::cEllipse(const Point & start, const Point & end)
 
 void cEllipse::onDraw(PAINTSTRUCT ps, HDC hdc)
 {
+	if (this->upper_leftPoint.getX() == -1)
+		return;
 	Ellipse(hdc, upper_leftPoint.getX(), upper_leftPoint.getY(), lower_rightPoint.getX(), lower_rightPoint.getY());
 }
 
 void Line::onDraw(PAINTSTRUCT ps, HDC hdc)
 {
+	if (this->startingPoint.getX() == -1)
+		return;
 	MoveToEx(hdc, startingPoint.getX(), startingPoint.getY(), NULL);
 	LineTo(hdc, endingPoint.getX(), endingPoint.getY());
 }

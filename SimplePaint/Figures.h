@@ -75,6 +75,7 @@ class ArrayFigs
 {
 	static vector<Figure*> arrayFigs;
 public:
+	int getSize() { return arrayFigs.size(); };
 	void addFigs(Figure* figs);
 	void onDraw(PAINTSTRUCT ps, HDC hdc);
 };

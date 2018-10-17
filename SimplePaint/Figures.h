@@ -24,19 +24,21 @@ public:
 class Figure
 {
 public:
+	Figure() {};
 	virtual void onDraw(PAINTSTRUCT ps, HDC hdc) = 0;
 };
 
-class Line: public Figure
+class Line : public Figure
 {
 private:
-	
+
 	Point startingPoint;
 	Point endingPoint;
 
 public:
 	static int ID;
 	Line() { startingPoint = Point();  endingPoint = Point(); }
+	~Line() {};
 	Line(const Point &A, const Point &B) { startingPoint = A; endingPoint = B; };
 	void onDraw(PAINTSTRUCT ps, HDC hdc);
 };

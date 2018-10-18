@@ -51,6 +51,7 @@ void cEllipse::onDraw(PAINTSTRUCT ps, HDC hdc)
 
 void Line::onDraw(PAINTSTRUCT ps, HDC hdc)
 {
+
 	if (this->startingPoint.getX() == -1)
 		return;
 	MoveToEx(hdc, startingPoint.getX(), startingPoint.getY(), NULL);

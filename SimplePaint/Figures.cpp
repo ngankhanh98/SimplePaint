@@ -3,9 +3,6 @@
 
 using namespace std;
 
-#define ID_Line 1
-#define ID_cRectangle 2
-#define	ID_cEllipse 3
 
 
 //int Figure::ID = 0;
@@ -69,7 +66,7 @@ void Line::onDraw(PAINTSTRUCT ps, HDC hdc)
 
 	if (this->startingPoint.getX() == -1)
 		return;
-	HPEN hPen = CreatePen(PS_DASHDOT, 3, rgbCurrent);
+	HPEN hPen = CreatePen(BS_SOLID, 1, rgbCurrent);
 	SelectObject(hdc, hPen);
 	MoveToEx(hdc, startingPoint.getX(), startingPoint.getY(), NULL);
 	LineTo(hdc, endingPoint.getX(), endingPoint.getY());

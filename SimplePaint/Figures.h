@@ -6,6 +6,10 @@
 
 using namespace std;
 
+#define ID_Line 3
+#define ID_cRectangle 2
+#define	ID_cEllipse 1
+
 class Point
 {
 private:

@@ -3,12 +3,11 @@
 
 using namespace std;
 
-
-
-//int Figure::ID = 0;
 int Line::ID = ID_Line;
 int cRectangle::ID = ID_cRectangle;
 int cEllipse::ID = ID_cEllipse;
+
+
 cRectangle::cRectangle()
 {
 	startingPoint = Point(0, 0);

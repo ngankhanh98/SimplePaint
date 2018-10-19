@@ -27,16 +27,9 @@ public:
 
 class Figure
 {
-protected:
-	//Point startingPoint; // startingPoint
-	//Point endingPoint;	// endingPoint
-	//DWORD  rgbCurrent;
-	//
+
 public:
-	//static int ID;
-	//Figure(const Point & start, const Point & end, DWORD  color) { startingPoint = start; endingPoint = end; rgbCurrent = color; };
 	virtual void onDraw(PAINTSTRUCT ps, HDC hdc) = 0;
-	//virtual  Figure* getFigure() = 0;
 };
 
 class Line : public Figure
@@ -49,7 +42,6 @@ private:
 public:
 	static int ID;
 	Line() { rgbCurrent = RGB(255, 0, 0); startingPoint = Point();  endingPoint = Point(); }
-	Figure* getFigure() { return this; };
 	~Line() {};
 	Line(const Point &A, const Point &B, DWORD  color) { startingPoint = A; endingPoint = B; rgbCurrent = color; };
 	void onDraw(PAINTSTRUCT ps, HDC hdc);
@@ -65,7 +57,6 @@ public:
 	static int ID;
 	cRectangle();
 	cRectangle(const Point & start, const Point & end, DWORD  color);
-	Figure* getFigure() { return this; };
 	~cRectangle();
 	void onDraw(PAINTSTRUCT ps,	HDC hdc);
 };
@@ -81,7 +72,6 @@ public:
 	cEllipse();
 	cEllipse(const Point & start, const Point & end, DWORD  color);
 	~cEllipse() {};
-	Figure* getFigure() { return this; };
 	void onDraw(PAINTSTRUCT ps, HDC hdc);
 };
 

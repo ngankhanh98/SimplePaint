@@ -171,17 +171,6 @@
     <Image Include="..\2.bmp" />
     <Image Include="..\3.bmp" />
     <Image Include="..\4.bmp" />
-    <Image Include="a (1).bmp" />
-    <Image Include="a.bmp" />
-    <Image Include="bitmap1.bmp" />
-    <Image Include="bitmap2.bmp" />
-    <Image Include="bitmap3.bmp" />
-    <Image Include="bitmap4.bmp" />
-    <Image Include="C:\Users\ngank\Desktop\ellipse.png" />
-    <Image Include="ellipse.bmp" />
-    <Image Include="ellipse.png" />
-    <Image Include="line.bmp" />
-    <Image Include="rec.bmp" />
     <Image Include="SimplePaint.ico" />
     <Image Include="small.ico" />
   </ItemGroup>

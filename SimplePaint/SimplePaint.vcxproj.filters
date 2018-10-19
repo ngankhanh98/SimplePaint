@@ -54,39 +54,6 @@
     <Image Include="SimplePaint.ico">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="a.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="ellipse.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="line.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="rec.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="bitmap1.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="bitmap2.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="a (1).bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="bitmap3.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="bitmap4.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="C:\Users\ngank\Desktop\ellipse.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="ellipse.png">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="..\2.bmp">
       <Filter>Resource Files</Filter>
     </Image>
